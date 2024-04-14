@@ -1,4 +1,3 @@
-show databases;
 create database library_management_system;
 use library_management_system;
 DELIMITER //																/*helps to create the stored procedure.*/
@@ -356,7 +355,7 @@ select * from tbl_book_authors;
 END	//					-- used to denote the end of a block of code within a stored procedure
 
 
-	/*============================== END POPULATING TABLES ==============================*/
+
 show create PROCEDURE Execute_library_management_system;
 
 CALL Execute_library_management_system();
@@ -368,9 +367,10 @@ SELECT * FROM tbl_book_loans;
 SELECT * FROM tbl_book_copies;
 SELECT * FROM tbl_book_authors;
 
-	/* =================== STORED PROCEDURE QUERY QUESTIONS =================================== */		
 
-	/*REVISE*/
+
+/* QUERY QUESTIONS */		
+
 
 /* #1- How many copies of the book titled "The Lost Tribe" are owned by the library branch whose name is "Sharpstown"? */
 select copies.book_copies_Branch_ID as 'Branch ID',
